@@ -3,21 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Keystone Surveys | Mapping Successes</title>
+  <title>Keystone Surveys | surveyors</title>
   <meta name="description" content="Providing top-notch surveying and engineering services for residential and commercial projects.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main" class="skip">Skip to content</a>
-  <header class="header" role="banner">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
     <div class="container nav-wrap">
-      <a href="#home" class="brand" aria-label="Keystone Surveys home">
-        <img src="assets/logo.png" alt="" class="logo" aria-hidden="true">
-        <span class="brand-name">Keystone <b>Surveys</b></span>
+      <a class="brand" href="#home" aria-label="Keystone Surveys home">
+        <img src="assets/logo.png" class="logo" alt="">
+        <span class="brand-name">Keystone <strong>Surveys</strong></span>
       </a>
-      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
       <nav id="nav" class="nav" aria-label="Primary">
+        <button class="nav-close" aria-label="Close">Close</button>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#our-story">Our Story</a></li>
@@ -26,6 +27,9 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact" class="btn btn-ghost">Get Started</a></li>
         </ul>
+        <form class="search" role="search" aria-label="Site">
+          <input type="search" placeholder="Search">
+        </form>
       </nav>
     </div>
   </header>
@@ -36,13 +40,11 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <h1>Mapping Successes</h1>
-          <p class="lead">Providing top-notch surveying and engineering services for residential and commercial projects.</p>
-          <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary">Get Started</a>
-          </div>
+          <p class="tagline">Providing top-notch surveying and engineering services for residential and commercial projects.</p>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
         </div>
         <figure class="hero-media">
-          <img src="assets/hero.jpg" alt="Surveyor operating a total station on site">
+          <img src="assets/hero.jpg" alt="">
         </figure>
       </div>
     </section>
@@ -53,26 +55,26 @@
         <header class="section-head">
           <h2>Latest News</h2>
         </header>
-        <div class="cards cards--news">
-          <article class="card card--news">
-            <img src="assets/news-uav.jpg" alt="UAV surveying services">
-            <div class="card-body">
+        <div class="news-grid">
+          <article class="news-card">
+            <img src="assets/news-uav.jpg" alt="">
+            <div class="news-body">
               <h3>Enhance Your Projects with Professional UAV Surveying Services</h3>
-              <p class="byline">Keystone Surveys</p>
+              <p class="by">Keystone Surveys</p>
             </div>
           </article>
-          <article class="card card--news">
-            <img src="assets/news-expert.jpg" alt="Expert surveying services">
-            <div class="card-body">
+          <article class="news-card">
+            <img src="assets/news-expert.jpg" alt="">
+            <div class="news-body">
               <h3>Boost Your Business with Expert Surveying and Engineering Services</h3>
-              <p class="byline">Keystone Surveys</p>
+              <p class="by">Keystone Surveys</p>
             </div>
           </article>
-          <article class="card card--news">
-            <img src="assets/news-comprehensive.jpg" alt="Comprehensive engineering solutions">
-            <div class="card-body">
+          <article class="news-card">
+            <img src="assets/news-comprehensive.jpg" alt="">
+            <div class="news-body">
               <h3>Comprehensive Engineering Solutions for Residential and Commercial Projects</h3>
-              <p class="byline">Keystone Surveys</p>
+              <p class="by">Keystone Surveys</p>
             </div>
           </article>
         </div>
@@ -88,13 +90,13 @@
         <div class="columns">
           <div class="prose">
             <p>Keystone Surveys specialises in offering premium surveying and engineering solutions to a diverse clientele. With a strong focus on accuracy and client satisfaction, we bring expertise and commitment to every project, big or small.</p>
-            <p>With 20+ years of engineering surveying experience, we bring a wealth of knowledge across disciplines. Our expertise encompasses everything from land surveying to construction management, ensuring precise and efficient execution. Our expertise includes installing control networks, traversing, setting out, and performing precise engineering surveys. Additionally, we specialise in machine control, laser scanning, and UAV surveying and inspections, ensuring the highest level of accuracy and efficiency.</p>
+            <p>With 20+ years of engineering surveying experience, We bring a wealth of knowledge across disciplines. Our expertise encompasses everything from land surveying to construction management, ensuring precise and efficient execution. Our expertise includes installing control networks, traversing, setting out, and performing precise engineering surveys. Additionally, we specialise in machine control, laser scanning, and UAV surveying and inspections, ensuring the highest level of accuracy and efficiency.</p>
             <p>We are dedicated to delivering high-quality results of accuracy efficiently.</p>
             <p>Trust us to deliver innovative solutions tailored to meet your needs. Let's work together to achieve your project goals.</p>
             <p><a href="#services" class="btn btn-ghost">Discover More</a></p>
           </div>
           <aside class="aside">
-            <img src="assets/story.jpg" alt="Surveying equipment close-up">
+            <img src="assets/story.jpg" alt="">
           </aside>
         </div>
       </div>
@@ -107,48 +109,36 @@
           <h2>Services</h2>
           <p class="muted">Service Information</p>
         </header>
-        <div class="cards cards--services">
+        <div class="cards">
           <article class="card">
-            <img src="assets/svc-surveying.jpg" alt="Surveying">
-            <div>
-              <h3>Surveying</h3>
-              <a href="#contact" class="read-more">Read More</a>
-            </div>
+            <img src="assets/svc-surveying.jpg" alt="">
+            <h3>Surveying</h3>
+            <a class="read-more" href="#contact">Read More</a>
           </article>
           <article class="card">
-            <img src="assets/svc-settingout.jpg" alt="Engineering Setting Out">
-            <div>
-              <h3>Engineering Setting Out</h3>
-              <a href="#contact" class="read-more">Read More</a>
-            </div>
+            <img src="assets/svc-settingout.jpg" alt="">
+            <h3>Engineering Setting Out</h3>
+            <a class="read-more" href="#contact">Read More</a>
           </article>
           <article class="card">
-            <img src="assets/svc-laserscan.jpg" alt="Terrestrial Laser Scanning">
-            <div>
-              <h3>Terrestrial Laser Scanning</h3>
-              <a href="#contact" class="read-more">Read More</a>
-            </div>
+            <img src="assets/svc-laserscan.jpg" alt="">
+            <h3>Terrestrial Laser Scanning</h3>
+            <a class="read-more" href="#contact">Read More</a>
           </article>
           <article class="card">
-            <img src="assets/svc-uav.jpg" alt="UAV Surveying">
-            <div>
-              <h3>UAV Surveying</h3>
-              <a href="#contact" class="read-more">Read More</a>
-            </div>
+            <img src="assets/svc-uav.jpg" alt="">
+            <h3>UAV Surveying</h3>
+            <a class="read-more" href="#contact">Read More</a>
           </article>
           <article class="card">
-            <img src="assets/svc-monitoring.jpg" alt="Monitoring">
-            <div>
-              <h3>Monitoring</h3>
-              <a href="#contact" class="read-more">Read More</a>
-            </div>
+            <img src="assets/svc-monitoring.jpg" alt="">
+            <h3>Monitoring</h3>
+            <a class="read-more" href="#contact">Read More</a>
           </article>
           <article class="card">
-            <img src="assets/svc-machinecontrol.jpg" alt="Machine Control Setup/Diagnostic">
-            <div>
-              <h3>Machine Control Setup/Diagnostic</h3>
-              <a href="#contact" class="read-more">Read More</a>
-            </div>
+            <img src="assets/svc-machinecontrol.jpg" alt="">
+            <h3>Machine Control Setup/Diagnostic</h3>
+            <a class="read-more" href="#contact">Read More</a>
           </article>
         </div>
       </div>
@@ -162,9 +152,9 @@
           <p class="muted">Selected work</p>
         </header>
         <div class="gallery">
-          <figure class="gallery-item"><img src="assets/port-1.jpg" alt="Project 1"></figure>
-          <figure class="gallery-item"><img src="assets/port-2.jpg" alt="Project 2"></figure>
-          <figure class="gallery-item"><img src="assets/port-3.jpg" alt="Project 3"></figure>
+          <figure class="gallery-item"><img src="assets/port-1.jpg" alt=""></figure>
+          <figure class="gallery-item"><img src="assets/port-2.jpg" alt=""></figure>
+          <figure class="gallery-item"><img src="assets/port-3.jpg" alt=""></figure>
         </div>
       </div>
     </section>
@@ -175,17 +165,17 @@
         <header class="section-head">
           <h2>Client Testimonials</h2>
         </header>
-        <div class="quotes">
+        <div class="testimonials">
           <blockquote>
-            <p>“Working with Keystone Surveys was a game-changer for our project. Their attention to detail and precision made all the difference.”</p>
+            <p>Working with Keystone Surveys was a game-changer for our project. Their attention to detail and precision made all the difference.</p>
             <footer>— John Geoghagan</footer>
           </blockquote>
           <blockquote>
-            <p>“Professionalism, efficiency, and quality define Keystone Surveys' services. Highly recommended for any surveying needs.”</p>
+            <p>Professionalism, efficiency, and quality define Keystone Surveys' services. Highly recommended for any surveying needs.</p>
             <footer>— Jane-Louise Smith</footer>
           </blockquote>
           <blockquote>
-            <p>“Keystone Surveys exceeded our expectations, delivering outstanding results and exceptional customer service.”</p>
+            <p>Keystone Surveys exceeded our expectations, delivering outstanding results and exceptional customer service.</p>
             <footer>— David Wilson</footer>
           </blockquote>
         </div>
@@ -193,26 +183,18 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section section--accent">
+    <section id="contact" class="section contact">
       <div class="container">
         <header class="section-head">
-          <h2>Contact</h2>
+          <h2>Keystone Surveys</h2>
         </header>
         <div class="contact-grid">
-          <form class="form" action="#" method="post" novalidate>
-            <label>Full name
-              <input type="text" name="name" required>
-            </label>
-            <label>Email
-              <input type="email" name="email" required>
-            </label>
-            <label>Message
-              <textarea name="message" rows="6" required></textarea>
-            </label>
+          <form class="contact-form" action="#" method="post" novalidate>
+            <label>Email<input type="email" placeholder="you@company.com"></label>
             <button class="btn btn-primary" type="submit">Send</button>
           </form>
           <address class="contact-info">
-            <p><strong>Email</strong><br><a href="mailto:info.keystonesurveys@gmail.com">info.keystonesurveys@gmail.com</a></p>
+            <p><strong>Email</strong><br>info.keystonesurveys@gmail.com</p>
             <p><strong>Address</strong><br>The Midlands,<br>UK</p>
             <ul class="social">
               <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
@@ -226,17 +208,17 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container foot">
+  <footer class="site-footer">
+    <div class="container foot-flex">
       <nav aria-label="Footer">
         <ul class="foot-nav">
-          <li><a href="#privacy">Privacy Policy</a></li>
-          <li><a href="#accessibility">Accessibility Statement</a></li>
-          <li><a href="#terms">Terms &amp; Conditions</a></li>
-          <li><a href="#cookies">Cookies Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Cookies Policy</a></li>
         </ul>
       </nav>
-      <small>© <span id="year"></span> Keystone Surveys.</small>
+      <small>© <span id="year"></span> 2025 by Keystone Surveys.</small>
     </div>
   </footer>
 
