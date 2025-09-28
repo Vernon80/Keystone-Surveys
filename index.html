@@ -4,66 +4,242 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Keystone Surveys | Mapping Successes</title>
+  <meta name="description" content="Providing top-notch surveying and engineering services for residential and commercial projects.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#our-story">Our Story</a></li>
-        <li><a href="#news">Latest News</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Get Started</a></li>
-      </ul>
-    </nav>
+  <a href="#main" class="skip">Skip to content</a>
+  <header class="header" role="banner">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Keystone Surveys home">
+        <img src="assets/logo.png" alt="" class="logo" aria-hidden="true">
+        <span class="brand-name">Keystone <b>Surveys</b></span>
+      </a>
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav id="nav" class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#our-story">Our Story</a></li>
+          <li><a href="#news">Latest News</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact" class="btn btn-ghost">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main id="home">
-    <section class="hero">
-      <h1>Mapping Successes</h1>
-      <p>Providing top-notch surveying and engineering services for residential and commercial projects.</p>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Mapping Successes</h1>
+          <p class="lead">Providing top-notch surveying and engineering services for residential and commercial projects.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/hero.jpg" alt="Surveyor operating a total station on site">
+        </figure>
+      </div>
     </section>
-    <section id="news">
-      <h2>Latest News</h2>
-      <article><h3>Enhance Your Projects with Professional UAV Surveying Services</h3></article>
-      <article><h3>Boost Your Business with Expert Surveying and Engineering Services</h3></article>
-      <article><h3>Comprehensive Engineering Solutions for Residential and Commercial Projects</h3></article>
+
+    <!-- Latest News -->
+    <section id="news" class="section section--alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Latest News</h2>
+        </header>
+        <div class="cards cards--news">
+          <article class="card card--news">
+            <img src="assets/news-uav.jpg" alt="UAV surveying services">
+            <div class="card-body">
+              <h3>Enhance Your Projects with Professional UAV Surveying Services</h3>
+              <p class="byline">Keystone Surveys</p>
+            </div>
+          </article>
+          <article class="card card--news">
+            <img src="assets/news-expert.jpg" alt="Expert surveying services">
+            <div class="card-body">
+              <h3>Boost Your Business with Expert Surveying and Engineering Services</h3>
+              <p class="byline">Keystone Surveys</p>
+            </div>
+          </article>
+          <article class="card card--news">
+            <img src="assets/news-comprehensive.jpg" alt="Comprehensive engineering solutions">
+            <div class="card-body">
+              <h3>Comprehensive Engineering Solutions for Residential and Commercial Projects</h3>
+              <p class="byline">Keystone Surveys</p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
-    <section id="our-story">
-      <h2>Our Story</h2>
-      <p>Keystone Surveys specialises in offering premium surveying and engineering solutions...</p>
+
+    <!-- Our Story -->
+    <section id="our-story" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Our Story</h2>
+        </header>
+        <div class="columns">
+          <div class="prose">
+            <p>Keystone Surveys specialises in offering premium surveying and engineering solutions to a diverse clientele. With a strong focus on accuracy and client satisfaction, we bring expertise and commitment to every project, big or small.</p>
+            <p>With 20+ years of engineering surveying experience, we bring a wealth of knowledge across disciplines. Our expertise encompasses everything from land surveying to construction management, ensuring precise and efficient execution. Our expertise includes installing control networks, traversing, setting out, and performing precise engineering surveys. Additionally, we specialise in machine control, laser scanning, and UAV surveying and inspections, ensuring the highest level of accuracy and efficiency.</p>
+            <p>We are dedicated to delivering high-quality results of accuracy efficiently.</p>
+            <p>Trust us to deliver innovative solutions tailored to meet your needs. Let's work together to achieve your project goals.</p>
+            <p><a href="#services" class="btn btn-ghost">Discover More</a></p>
+          </div>
+          <aside class="aside">
+            <img src="assets/story.jpg" alt="Surveying equipment close-up">
+          </aside>
+        </div>
+      </div>
     </section>
-    <section id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Surveying</li>
-        <li>Engineering Setting Out</li>
-        <li>Terrestrial Laser Scanning</li>
-        <li>UAV Surveying</li>
-        <li>Monitoring</li>
-        <li>Machine Control Setup/Diagnostic</li>
-      </ul>
+
+    <!-- Services -->
+    <section id="services" class="section section--alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Services</h2>
+          <p class="muted">Service Information</p>
+        </header>
+        <div class="cards cards--services">
+          <article class="card">
+            <img src="assets/svc-surveying.jpg" alt="Surveying">
+            <div>
+              <h3>Surveying</h3>
+              <a href="#contact" class="read-more">Read More</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/svc-settingout.jpg" alt="Engineering Setting Out">
+            <div>
+              <h3>Engineering Setting Out</h3>
+              <a href="#contact" class="read-more">Read More</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/svc-laserscan.jpg" alt="Terrestrial Laser Scanning">
+            <div>
+              <h3>Terrestrial Laser Scanning</h3>
+              <a href="#contact" class="read-more">Read More</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/svc-uav.jpg" alt="UAV Surveying">
+            <div>
+              <h3>UAV Surveying</h3>
+              <a href="#contact" class="read-more">Read More</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/svc-monitoring.jpg" alt="Monitoring">
+            <div>
+              <h3>Monitoring</h3>
+              <a href="#contact" class="read-more">Read More</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/svc-machinecontrol.jpg" alt="Machine Control Setup/Diagnostic">
+            <div>
+              <h3>Machine Control Setup/Diagnostic</h3>
+              <a href="#contact" class="read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>[Project images placeholder]</p>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Portfolio</h2>
+          <p class="muted">Selected work</p>
+        </header>
+        <div class="gallery">
+          <figure class="gallery-item"><img src="assets/port-1.jpg" alt="Project 1"></figure>
+          <figure class="gallery-item"><img src="assets/port-2.jpg" alt="Project 2"></figure>
+          <figure class="gallery-item"><img src="assets/port-3.jpg" alt="Project 3"></figure>
+        </div>
+      </div>
     </section>
-    <section id="testimonials">
-      <h2>Client Testimonials</h2>
-      <blockquote>“Working with Keystone Surveys was a game-changer...” — John Geoghagan</blockquote>
-      <blockquote>“Professionalism, efficiency, and quality define...” — Jane-Louise Smith</blockquote>
-      <blockquote>“Keystone Surveys exceeded our expectations...” — David Wilson</blockquote>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section section--alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Client Testimonials</h2>
+        </header>
+        <div class="quotes">
+          <blockquote>
+            <p>“Working with Keystone Surveys was a game-changer for our project. Their attention to detail and precision made all the difference.”</p>
+            <footer>— John Geoghagan</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Professionalism, efficiency, and quality define Keystone Surveys' services. Highly recommended for any surveying needs.”</p>
+            <footer>— Jane-Louise Smith</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Keystone Surveys exceeded our expectations, delivering outstanding results and exceptional customer service.”</p>
+            <footer>— David Wilson</footer>
+          </blockquote>
+        </div>
+      </div>
     </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: info.keystonesurveys@gmail.com</p>
-      <p>Address: The Midlands, UK</p>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--accent">
+      <div class="container">
+        <header class="section-head">
+          <h2>Contact</h2>
+        </header>
+        <div class="contact-grid">
+          <form class="form" action="#" method="post" novalidate>
+            <label>Full name
+              <input type="text" name="name" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" required>
+            </label>
+            <label>Message
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+          <address class="contact-info">
+            <p><strong>Email</strong><br><a href="mailto:info.keystonesurveys@gmail.com">info.keystonesurveys@gmail.com</a></p>
+            <p><strong>Address</strong><br>The Midlands,<br>UK</p>
+            <ul class="social">
+              <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+              <li><a href="#" aria-label="Facebook">Facebook</a></li>
+              <li><a href="#" aria-label="Instagram">Instagram</a></li>
+              <li><a href="#" aria-label="X">X</a></li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>© <span id="year"></span> Keystone Surveys | Privacy Policy | Accessibility Statement | Terms & Conditions | Cookies Policy</p>
+
+  <footer class="footer">
+    <div class="container foot">
+      <nav aria-label="Footer">
+        <ul class="foot-nav">
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#accessibility">Accessibility Statement</a></li>
+          <li><a href="#terms">Terms &amp; Conditions</a></li>
+          <li><a href="#cookies">Cookies Policy</a></li>
+        </ul>
+      </nav>
+      <small>© <span id="year"></span> Keystone Surveys.</small>
+    </div>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
