@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Keystone Surveys | surveyors</title>
   <meta name="description" content="Providing top-notch surveying and engineering services for residential and commercial projects.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header" role="banner">
-    <div class="container nav-wrap">
+  <header class="site-header">
+    <div class="container header-inner">
       <a class="brand" href="#home" aria-label="Keystone Surveys home">
         <img src="assets/logo.png" class="logo" alt="">
         <span class="brand-name">Keystone <strong>Surveys</strong></span>
       </a>
-      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">MENU</button>
       <nav id="nav" class="nav" aria-label="Primary">
-        <button class="nav-close" aria-label="Close">Close</button>
-        <ul>
+        <button class="nav-close" aria-label="Close menu">Close</button>
+        <ul class="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#our-story">Our Story</a></li>
           <li><a href="#news">Latest News</a></li>
@@ -28,20 +28,19 @@
           <li><a href="#contact" class="btn btn-ghost">Get Started</a></li>
         </ul>
         <form class="search" role="search" aria-label="Site">
-          <input type="search" placeholder="Search">
+          <input type="search" placeholder="Search" aria-label="Search">
         </form>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- Hero -->
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
           <h1>Mapping Successes</h1>
           <p class="tagline">Providing top-notch surveying and engineering services for residential and commercial projects.</p>
-          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a class="btn btn-primary" href="#contact">Get Started</a>
         </div>
         <figure class="hero-media">
           <img src="assets/hero.jpg" alt="">
@@ -49,7 +48,6 @@
       </div>
     </section>
 
-    <!-- Latest News -->
     <section id="news" class="section section--alt">
       <div class="container">
         <header class="section-head">
@@ -81,7 +79,6 @@
       </div>
     </section>
 
-    <!-- Our Story -->
     <section id="our-story" class="section">
       <div class="container">
         <header class="section-head">
@@ -90,10 +87,10 @@
         <div class="columns">
           <div class="prose">
             <p>Keystone Surveys specialises in offering premium surveying and engineering solutions to a diverse clientele. With a strong focus on accuracy and client satisfaction, we bring expertise and commitment to every project, big or small.</p>
-            <p>With 20+ years of engineering surveying experience, We bring a wealth of knowledge across disciplines. Our expertise encompasses everything from land surveying to construction management, ensuring precise and efficient execution. Our expertise includes installing control networks, traversing, setting out, and performing precise engineering surveys. Additionally, we specialise in machine control, laser scanning, and UAV surveying and inspections, ensuring the highest level of accuracy and efficiency.</p>
+            <p>With 20+ years of engineering surveying experience, We bring a wealth of knowledge across disciplines. Our expertise encompasses everything from land surveying to construction management, ensuring precise and efficient execution. Our expertise includes installing control networks, traversing, setting out, and performing precise engineering surveys. Additionally, we specialise in machine control, laser scanning, and UAV surveying and inspections, ensuring the highest level of accuracy and e...
             <p>We are dedicated to delivering high-quality results of accuracy efficiently.</p>
             <p>Trust us to deliver innovative solutions tailored to meet your needs. Let's work together to achieve your project goals.</p>
-            <p><a href="#services" class="btn btn-ghost">Discover More</a></p>
+            <p><a class="btn btn-ghost" href="#services">Discover More</a></p>
           </div>
           <aside class="aside">
             <img src="assets/story.jpg" alt="">
@@ -102,7 +99,6 @@
       </div>
     </section>
 
-    <!-- Services -->
     <section id="services" class="section section--alt">
       <div class="container">
         <header class="section-head">
@@ -144,7 +140,6 @@
       </div>
     </section>
 
-    <!-- Portfolio -->
     <section id="portfolio" class="section">
       <div class="container">
         <header class="section-head">
@@ -159,7 +154,6 @@
       </div>
     </section>
 
-    <!-- Testimonials -->
     <section id="testimonials" class="section section--alt">
       <div class="container">
         <header class="section-head">
@@ -182,7 +176,6 @@
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="section contact">
       <div class="container">
         <header class="section-head">
@@ -190,7 +183,9 @@
         </header>
         <div class="contact-grid">
           <form class="contact-form" action="#" method="post" novalidate>
-            <label>Email<input type="email" placeholder="you@company.com"></label>
+            <label>Email
+              <input type="email" placeholder="you@company.com" required>
+            </label>
             <button class="btn btn-primary" type="submit">Send</button>
           </form>
           <address class="contact-info">
@@ -209,7 +204,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container foot-flex">
+    <div class="container foot">
       <nav aria-label="Footer">
         <ul class="foot-nav">
           <li><a href="#">Privacy Policy</a></li>
